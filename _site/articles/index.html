@@ -1,31 +1,70 @@
 <!doctype html>
 <html lang="en">
 
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
-	<title>JSN / articles</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="content-language" content="en" />
+<title>JSN / articles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-startup-image" href="/assets/images/apple-touch-startup-image-320x460.png" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="/assets/images/apple-touch-startup-image-768x1004.png" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144-precomposed.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114-precomposed.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png">
 	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	
+<!-- Start page styles -->
 
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-startup-image" href="/assets/images/apple-touch-startup-image-320x460.png" />
-	<link rel="apple-touch-startup-image" sizes="768x1004" href="/assets/images/apple-touch-startup-image-768x1004.png" />
 
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="/assets/stylesheets/css/styles.css" type="text/css" media="screen" />
+
+
+<!-- Articles styles -->
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/stylesheets/css/grid.css">	
+<link rel="stylesheet" href="/assets/stylesheets/css/mediaqueries.css">
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="/assets/stylesheets/css/styles.css" type="text/css" media="screen" />
+
+<!-- Icon fonts -->
+<link rel="stylesheet" href="/assets/stylesheets/css/icons.css" />
+
+<!-- Flex Slider -->
+<link rel="stylesheet" href="/assets/stylesheets/css/flexslider.css" type="text/css" media="screen" />
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="/assets/stylesheets/css/animate.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/stylesheets/css/animate-delays.css" type="text/css" media="screen" />
+
+<!-- Modernizr - to detect HTML5 and CSS3 features -->
+<script src="/assets/js/modernizr-2.5.3.min.js"></script>
 
 </head>
 
-<body>
-<div id="mobile-menu" style="display:none;">
+<body class="articles" data-spy="scroll" data-target=".sidebar">
+  <section id="top"></section><div id="mobile-menu" style="display:none;">
 
 	<ul style="text-align: center;">
 		<a href="/about/"><li 

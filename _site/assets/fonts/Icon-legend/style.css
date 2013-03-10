@@ -1,0 +1,227 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-microphone:before, .icon-book:before, .icon-paper:before, .icon-copy:before, .icon-tag:before, .icon-cart:before, .icon-support:before, .icon-phone:before, .icon-mail:before, .icon-location:before, .icon-compass:before, .icon-database:before, .icon-undo:before, .icon-redo:before, .icon-forward:before, .icon-reply:before, .icon-reply-2:before, .icon-user:before, .icon-user-2:before, .icon-search:before, .icon-zoom-in:before, .icon-search-2:before, .icon-zoom-out:before, .icon-dashboard:before, .icon-cube:before, .icon-power:before, .icon-clipboard:before, .icon-cloud:before, .icon-tree-view:before, .icon-cancel:before, .icon-cancel-2:before, .icon-cancel-3:before, .icon-checkmark:before, .icon-share:before, .icon-twitter:before, .icon-twitter-2:before, .icon-feed:before, .icon-facebook:before, .icon-github:before, .icon-file-pdf:before, .icon-compass-2:before, .icon-check-alt:before, .icon-share-2:before, .icon-compass-3:before, .icon-book-alt2:before, .icon-price:before, .icon-info-circle:before, .icon-document:before, .icon-google-circles:before, .icon-popup:before, .icon-suitcase:before, .icon-suitcase-2:before, .icon-mobile:before, .icon-share-3:before, .icon-compass-4:before, .icon-soundcloud:before, .icon-mail-2:before, .icon-safari:before, .icon-lines:before, .icon-linkedin:before, .icon-tumblr:before, .icon-vimeo:before, .icon-movie:before, .icon-camera:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-microphone:before {
+	content: "\28";
+}
+.icon-book:before {
+	content: "\29";
+}
+.icon-paper:before {
+	content: "\2a";
+}
+.icon-copy:before {
+	content: "\2c";
+}
+.icon-tag:before {
+	content: "\2d";
+}
+.icon-cart:before {
+	content: "\2e";
+}
+.icon-support:before {
+	content: "\2f";
+}
+.icon-phone:before {
+	content: "\30";
+}
+.icon-mail:before {
+	content: "\31";
+}
+.icon-location:before {
+	content: "\32";
+}
+.icon-compass:before {
+	content: "\33";
+}
+.icon-database:before {
+	content: "\3b";
+}
+.icon-undo:before {
+	content: "\3c";
+}
+.icon-redo:before {
+	content: "\3d";
+}
+.icon-forward:before {
+	content: "\3e";
+}
+.icon-reply:before {
+	content: "\3f";
+}
+.icon-reply-2:before {
+	content: "\40";
+}
+.icon-user:before {
+	content: "\47";
+}
+.icon-user-2:before {
+	content: "\48";
+}
+.icon-search:before {
+	content: "\4b";
+}
+.icon-zoom-in:before {
+	content: "\4c";
+}
+.icon-search-2:before {
+	content: "\4d";
+}
+.icon-zoom-out:before {
+	content: "\4e";
+}
+.icon-dashboard:before {
+	content: "\54";
+}
+.icon-cube:before {
+	content: "\58";
+}
+.icon-power:before {
+	content: "\5c";
+}
+.icon-clipboard:before {
+	content: "\5d";
+}
+.icon-cloud:before {
+	content: "\5e";
+}
+.icon-tree-view:before {
+	content: "\5f";
+}
+.icon-cancel:before {
+	content: "\60";
+}
+.icon-cancel-2:before {
+	content: "\70";
+}
+.icon-cancel-3:before {
+	content: "\71";
+}
+.icon-checkmark:before {
+	content: "\72";
+}
+.icon-share:before {
+	content: "\77";
+}
+.icon-twitter:before {
+	content: "\79";
+}
+.icon-twitter-2:before {
+	content: "\7b";
+}
+.icon-feed:before {
+	content: "\7c";
+}
+.icon-facebook:before {
+	content: "\e000";
+}
+.icon-github:before {
+	content: "\e006";
+}
+.icon-file-pdf:before {
+	content: "\e011";
+}
+.icon-compass-2:before {
+	content: "\e012";
+}
+.icon-check-alt:before {
+	content: "\e013";
+}
+.icon-share-2:before {
+	content: "\e016";
+}
+.icon-compass-3:before {
+	content: "\e01c";
+}
+.icon-book-alt2:before {
+	content: "\e01d";
+}
+.icon-price:before {
+	content: "\e02b";
+}
+.icon-info-circle:before {
+	content: "\e02d";
+}
+.icon-document:before {
+	content: "\e02e";
+}
+.icon-google-circles:before {
+	content: "\e02f";
+}
+.icon-popup:before {
+	content: "\e031";
+}
+.icon-suitcase:before {
+	content: "\e036";
+}
+.icon-suitcase-2:before {
+	content: "\e038";
+}
+.icon-mobile:before {
+	content: "\e03a";
+}
+.icon-share-3:before {
+	content: "\e03f";
+}
+.icon-compass-4:before {
+	content: "\e040";
+}
+.icon-soundcloud:before {
+	content: "\e041";
+}
+.icon-mail-2:before {
+	content: "\7a";
+}
+.icon-safari:before {
+	content: "\e045";
+}
+.icon-lines:before {
+	content: "\e046";
+}
+.icon-linkedin:before {
+	content: "\e048";
+}
+.icon-tumblr:before {
+	content: "\e047";
+}
+.icon-vimeo:before {
+	content: "\e04a";
+}
+.icon-movie:before {
+	content: "\e04b";
+}
+.icon-camera:before {
+	content: "\e04c";
+}

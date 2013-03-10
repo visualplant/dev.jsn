@@ -1,0 +1,397 @@
+---
+layout: case
+title: work
+section: portfolio
+tags: []
+---
+
+	<!--<header id="main-header" class="container">
+
+		<div class="row">
+			
+			<h1 class="col_1">34 Responsive Grid System</h1>
+
+		</div>
+
+	</header>-->
+
+	<div id="main-wrapper" class="container">
+
+		<!--<section id="introduction" class="row">
+
+			<div class="col_3c">
+
+				<p class="info-text">34Grid is a Responsive Grid System based on "equally distributed columns" layout basis. In contrast to other great grid systems (@see bottom of page), 34Grid provides equally distributed columns for each row. (and also column complements for inequal distributions)</p>
+				<p class="info-text">If you're already familiar with grid systems and responsive web design just create&amp;download a bundle and see what is inside. Else you may start with resizing your browser window.</p>
+
+			</div>
+
+			<div class="col_3">
+
+				<p class="screen-sizes"><img src="img/device-sizes-preview.png" alt="various device sizes"></p>
+
+			</div>
+
+		</section>-->
+
+		<section class="row">
+
+			<header class="col_1">
+				<h2>Options</h2>
+			</header>
+
+			<div class="col_4 pane">
+
+				<h3>dividableBy</h3>
+				<p>Select a number to equally divide a single row. This option tells builder to create an n equal columned layout.</p>
+
+			</div>
+
+			<div class="col_4 pane">
+				
+				<div style="background:transparent url(/assets/images/capsule/redstar-dev2.jpg) no-repeat -500px -227px;height: 100px;"></div>
+
+				<h3>margin</h3>
+				<p></p>
+
+			</div>
+
+			<div class="col_4 user-float-for-col_4 pane">
+
+				<h3>rowMargin</h3>
+				<p>Margin for a complete row. (actually it's one col_*'s bottom margin)</p>
+
+			</div>
+
+			<div class="col_4 pane">
+
+				<h3>transitions</h3>
+				<p>A simple transition effect addition for each of your col_* classes. (considering you use default layout markup for your design)</p>
+
+			</div>
+
+		</section>
+		
+		<section class="row">
+		
+			<div class="col_4 pane">
+
+				<h3>dividableBy</h3>
+				<p>Select a number to equally divide a single row. This option tells builder to create an n equal columned layout.</p>
+
+			</div>
+
+			<div class="col_4 pane">
+
+				<h3>margin</h3>
+				<p>Left and right margin for each column or you can think margin option as half of margin between each of your column (col_1, col_2, ...) element.</p>
+
+			</div>
+
+			<div class="col_4 user-float-for-col_4 pane">
+
+				<h3>rowMargin</h3>
+				<p>Margin for a complete row. (actually it's one col_*'s bottom margin)</p>
+
+			</div>
+
+			<div class="col_4 pane">
+
+				<h3>transitions</h3>
+				<p>A simple transition effect addition for each of your col_* classes. (considering you use default layout markup for your design)</p>
+
+			</div>
+
+		</section>
+
+		<!-- <div class="section-seperator">&nbsp;</div>
+
+		<section id="markup" class="row emphasized-bg-section">
+
+			<header class="col_1">
+				<h2>Markup &amp; Classes</h2>
+			</header>
+
+		
+			<div class="col_2">
+				
+				<h3>CSS Part</h3>
+
+				<ul>
+					<li>
+						<h5>.container</h5>
+						<p>Main wrapper class. Use ".container" class as your holder for ".row" groups. You can control max. width of your content with container class in each @media state.</p>
+					</li>
+					<li>
+						<h5>.row</h5>
+						<p>Consider ".row" classes as semantic grouping blocks. You can dump more than one "100%" width content in a single row. Here is the math: "A row can contain [n*100%] columns, so you can start 2 col_2’s and then without defining a new row continue with 3 col_3’s then 4 col_4's and so on.."</p>
+					</li>
+					<li>
+						<h5>.col_1, .col_2, .col_3, .col_*</h5>
+						<p>Different width options for your design. col_1 is a single cell in a row, col_2 is 2 columns in a row, col_3 is three equal columns for a row and so on..</p>
+					</li>
+					<li>
+						<h5>.col_1c, .col_2c, .col_3c, .col_*c</h5>
+						<p>Complement classes are unequal distributions. A complement class fullfills it's main class and provides a 100% width. (".col_3" + ".col_3c", ".col_4" + ".col_4c, ...")</p>
+					</li>
+					<li>
+						<h5>.skip-float</h5>
+						<p>When you use n*100% width content in a single row, if first column of current full width group is taller than all subsequent columns then we got a floating problem. But don't worry, solution is fairly simple. Just clear left of new 100% groups first column with <u>.skip-float</u> class. There, we got a new line. <a id="toggle-skip-float-image-button" href="#">see tutorial image</a></p>
+						<p id="skip-float-tutorial-image"><img src="img/skip-float-tutorial-image.png" title="click to close" alt="skip float tutorial image"></p>
+						
+						<p class="user-floats-explanation"><u>.skip-float</u> works autonomous. It places a brand new line to break with preceding 100% width group in same row group. But what if we need to float our columns in same 100% width group? Here the boring and problematic part comes. When it comes to same row group floating, we need to control each problematic non-floating column in it's own @media state in queries CSS file. It's hardly-manual but mandatory for now. <a id="toggle-user-float-image-button" href="#">see tutorial image</a></p>
+						<p id="user-float-tutorial-image"><img src="img/user-float-tutorial-image.png" title="click to close" alt="user float tutorial image"></p>
+					</li>
+					<li>
+						<h5>.video-holder</h5>
+						<p>This class does some extra work. With a little CSS trick you can embed youtube, vimeo videos responsively to your web site. It's easy to use, just wrap your embed code with ".video-holder" class.</p>
+					</li>
+					<li>
+						<h5>img, object, video, figure</h5>
+						<p>In 34Grid, visual elements are automaticly resizing to 100% width. If you want to change this default behaviour, simply delete CSS code related to this elements.</p>
+					</li>
+				</ul>
+
+			</div>
+
+			
+			<div class="col_2">
+
+				
+				<div class="code-section">
+
+					<div class="code-block">
+
+						<h4>HTML Part (complements)</h4>
+
+						<div>
+							<pre><span class="code-comment">&lt;!--main wrapper class for all content--&gt;</span></pre>
+							<pre>&lt;<span class="code-tag">div</span> <span class="code-attribute">class</span>=<span class="code-string">"container"</span>&gt;</pre>
+						</div>
+
+						<div>
+							<pre>   <span class="code-comment">&lt;!--3 &amp; 3's complement--&gt;</span></pre>
+							<pre>   &lt;<span class="code-tag">section</span> <span class="code-attribute">class</span>=<span class="code-string">"row"</span>&gt;</pre>
+							<pre>      &lt;<span class="code-tag">div</span> <span class="code-attribute">class</span>=<span class="code-string">"col_3"</span>&gt;col_3&lt;&#47;<span class="code-tag">div</span>&gt;</pre>
+							<pre>      &lt;<span class="code-tag">div</span> <span class="code-attribute">class</span>=<span class="code-string">"col_3c"</span>&gt;col_3c&lt;&#47;<span class="code-tag">div</span>&gt;</pre>
+							<pre>   &lt;&#47;<span class="code-tag">section</span>&gt;</pre>
+						</div>
+
+						<div><pre>&lt;&#47;<span class="code-tag">div</span>&gt;<span class="code-comment">&lt;!--eof container--&gt;</span></pre></div>
+					
+					</div>
+
+				</div>
+
+				
+				<div class="code-section">
+
+					<div class="code-block">
+
+						<h4>Video Content</h4>
+
+						<div>
+							<pre><span class="code-comment">&lt;!--video content--&gt;</span></pre>
+							<pre>&lt;<span class="code-tag">div</span> <span class="code-attribute">class</span>=<span class="code-string">"col_[*]"</span>&gt;</pre>
+						</div>
+
+						<div>
+							<pre>   &lt;<span class="code-tag">p</span> <span class="code-attribute">class</span>=<span class="code-string">"video-holder"</span>&gt;</pre>
+							<pre>      &lt;<span class="code-tag">iframe</span> <span class="code-attribute">width</span>=<span class="code-string">640</span> <span class="code-attribute">height</span>=<span class="code-string">480</span> <span class="code-attribute">src</span>=<span class="code-string">http://www.youtube.com/embed/WUz-WqUw4Ic</span> <span class="code-attribute">frameborder</span>=<span class="code-string">0</span> <span class="code-attribute">allowfullscreen</span>&gt;&lt;&#47;<span class="code-tag">iframe</span>&gt;</pre>
+							<pre>   &lt;&#47;<span class="code-tag">p</span>&gt;</pre>
+						</div>
+
+						<div>
+							<pre>&lt;&#47;<span class="code-tag">div</span>&gt;<span class="code-comment">&lt;!--eof video--&gt;</span></pre>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		
+		<div class="section-seperator">&nbsp;</div>
+
+		
+		<section id="visuals" class="row">
+
+			<header class="col_1">
+				<h2>Visual Content</h2>
+			</header>
+
+			<div class="col_3">
+				<h3>Images</h3>				
+				<p><img src="img/visual-content-image.jpg" alt="visual content"></p>
+				<p>Placing images to col_*'s are easiest. Just place the image into your HTML without passing explicit width and height to HTML img tags. By max-height setting in CSS, you can restrict image spreading.</p>
+			</div>
+
+			<div class="col_3">
+				<h3>Videos</h3>
+				<p class="video-holder"><iframe id="youtube-video-frame" width="640" height="480" src="http://www.youtube.com/embed/WUz-WqUw4Ic?rel=0" frameborder="0" allowfullscreen></iframe></p>
+				<p>Video content placement has a little CSS trick. I found the trick at <a href="http://webdesignerwall.com/tutorials/css-elastic-videos" target="_blank">webdesignerwall</a> which refer to <a href="http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/" target="_blank">a&nbsp;list&nbsp;apart</a>. I choose the tricky CSS implementation for video content resizing, but you may use other javascript libraries surely.</p>
+			</div>
+
+			<div class="col_3">
+				<h3>Figures</h3>
+				<div id="figure-holder">
+					<figure>
+						<img src="img/visual-content-figure.jpg" alt="HTML figure element">
+						<figcaption>Maiden's Tower in Istanbul</figcaption>						
+					</figure>
+				</div>
+				<p>Wanna stay in touch with semantics? Don't hesitate to use figure element with 34Grid.</p>
+			</div>
+
+		</section>
+
+		
+
+
+		<div class="section-seperator">&nbsp;</div>
+
+
+		
+		<section id="about" class="row">
+
+			<header class="col_1">
+				<h2>About</h2>
+			</header>
+
+			<div class="col_2">
+				<h4>class' naming</h4>
+				<p><span class="upcase-start">C</span>lass naming <span class="black-in-text">syntax</span> of 34Grid (col_COLWIDTH) is a little confusing if you used other grid systems before 34Grid. In 34Grid, COLWIDTH part in col_ names says "current row is being divided by COLWIDTH". (so if COLWIDTH is 5 current row is being sliced to 5 equal part.</p>
+				<p>col_1's are full width columns, col_2's are 2 equal columns, col_3's are 3 and so on...)</p>
+				
+				<h4>column breaking logic</h4>
+				<p><span class="upcase-start">3</span>4Grid is bundled with a simple column breaking <span class="black-in-text">logic</span>. It’s just default behaviour for grid system. You can customize it as your needs. Basic question for column breaking logic is "how can i construct a row with n equal cloumns?". So, considering a 10 equal columned layout answer is simple: 10, 5, 2, 1. This 4 values are our media states. If you consider 12, now you have 12, 6, 4, 3, 2, 1. It has 6 different states. (yep 12 has the richest set up option for column breaking and my favourite:) @see icon showcase sample)</p>
+				<p><span class="upcase-start">L</span>astly for a <span class="black-in-text">prime</span> numbered column like 13 we just have 2 states which are 13 and 1. (prime columns are being divided only iphone portrait layout state)</p>
+			</div>
+
+			<div class="col_2">
+				<h4>here is the bundled breaking logic</h4>
+				<ul id="bundled-rules-list">
+					<li>If number of columns (dividableBy) is less than 8, start writing queries from ipad landscape (1024px) else, start writing queries from ipad portrait (768px).</li>
+					<li>Break columns in each media query state if current column is dividable by an integer other than 1 and column itself.</li>
+					<li>Special handling for column number 3 (three equal columns for 1 row). Postpone query writing for 1 state.</li>
+					<li>Special handling for column number 2 (two equal columns for 1 row). Postpone query writing for 2 state.</li>
+					<li>Do not break columns until last query state if they are primes greater than 3. (5, 7, 11, 13)</li>
+					<li>At last query state drop left and right margins of all columns and set all columns to 100% width.</li>
+				</ul>
+			</div>
+
+			<div class="col_4 skip-float">
+				<h4>34?</h4>
+				<p><span class="black-in-text">Unexplainable</span> part of 34Grid.</p>
+			</div>
+
+			<div class="col_4">
+				<h4>the idea</h4>
+				<p><span class="black-in-text">It was</span> simple, to not to repeat same processes again'n again.</p>
+			</div>
+
+			<div class="col_4 user-float-for-col_4">
+				<h4>prerequisites</h4>
+				<p><span class="black-in-text">Some</span> HTML knowledge, some CSS and a little grid based design stuff..</p>
+			</div>
+
+			<div class="col_4">
+				<h4>developer</h4>
+				<p>it's <span class="black-in-text">me!</span></p>
+				<p>
+					<a href="https://twitter.com/xkema" class="twitter-follow-button" data-show-count="false">Follow @xkema</a>
+					<script>!function(e,a,f){var c,b=e.getElementsByTagName(a)[0];if(!e.getElementById(f)){c=e.createElement(a);c.id=f;c.src="//platform.twitter.com/widgets.js";b.parentNode.insertBefore(c,b)}}(document,"script","twitter-wjs");</script>
+				</p>
+			</div>			
+
+			<div class="col_2 skip-float">
+				<h4>contribute!</h4>
+				<p><span class="black-in-text">Ask questions</span>, share experiences, report bugs. I didn't test everything in 34Grid so some feedback would be good. Don't hesitate to write me anything about 34Grid.</p>
+			</div>
+
+			<div class="col_2">
+				<h4>free</h4>
+				<p><span class="black-in-text">Just use it.</span> If you need a physical license @see license info in footer.</p>
+			</div>
+
+		</section>
+		
+	-->
+
+	</div>
+
+	
+	<!--<footer>
+
+		
+		<div class="footer-top-visuals">&nbsp;</div>
+
+		
+		<div class="container">
+
+			<div class="row">
+
+				
+				<div class="col_3">
+					<h3>Before You Leave..</h3>
+					<p>Thank you for joining me. 34Grid is a free tool and it will always be. I added Creative Commons license just to provide a licese material. Actually I don't know very details of it. In short you can use, modify, copy &amp; paste 34Grid both for your non-commercial and commercial projects. Not mandatory but as always be, author credits/links to your product would be nice and maybe you can share/like it somewhere. You can delete in-code author info comments but it would also be nice not to delete them. Finally, saying again, you don't need to be nice.. Feel free..</p>
+
+					<div id="shares-group-footer">
+						
+						<div>
+							<div class="fb-like" data-href="http://34grid.com" data-send="false" data-layout="box_count" data-show-faces="false" data-font="arial"></div>
+						</div>
+						
+						<div>
+							<div class="g-plusone" data-size="tall" data-href="http://34grid.com"></div>
+						</div>
+						
+						<div>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-text="34 Responsive Grid System" data-via="xkema" data-count="vertical">Tweet</a>
+							<script>!function(e,a,f){var c,b=e.getElementsByTagName(a)[0];if(!e.getElementById(f)){c=e.createElement(a);c.id=f;c.src="//platform.twitter.com/widgets.js";b.parentNode.insertBefore(c,b)}}(document,"script","twitter-wjs");</script>
+						</div>
+					</div>
+				</div>
+				
+				<div id="footer-contact" class="col_3">
+					<h3>License Info</h3>
+					<p class="clearfix">
+						<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">34 Responsive Grid System</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://kemalyilmaz.com" property="cc:attributionName" rel="cc:attributionURL">Kemal Yılmaz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br>
+						<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png"/></a>
+					</p>
+					<h3>Contact</h3>
+					<p>Here are contact links you can use. I appreciate if you send me some feedback about 34Grid and give me a chance to improve it.</p>
+					<p class="clearfix">
+						<a href="https://twitter.com/xkema"><img src="img/contact-twitter.png" alt="twitter"></a>
+						<a href="http://www.facebook.com/pages/34Grid/401562963236958"><img src="img/contact-facebook.png" alt="facebook"></a>
+						<a href="mailto:kemalxyz@gmail.com"><img src="img/contact-mail.png" alt="mail"></a>
+					</p>
+					<p>
+						<a href="mailto:sayhello@34grid.com">sayhello <span class="code-tag">at</span> 34grid <span class="code-tag">dot</span> com</a>
+					</p>
+					<p>34 Responsive Grid System by "Kemal Yılmaz"</p>
+					<p><a href="http://kemalyilmaz.com">kemalyilmaz.com</span><a></p>
+				</div>
+				
+				<div class="col_3">
+					<h3>A Little Help?</h3>
+					<p>If you want to consider donations follow the donation button. Don't make me rich. Just buy a beer if you want.</p>
+					<p>After a beer if i have enough money, maybe i can send you a postcard.</p>
+					<div>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NMZ85P6UN22Z8">
+							<input type="image" src="http://34grid.com/img/btn_donate_SM.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="paypal" border="0" src="https://www.paypalobjects.com/tr_TR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>--> 
