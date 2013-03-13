@@ -28,7 +28,7 @@
 	Default centered with margin 0 auto; style.
 	============================================================ CONTAINER ====
 */
-.container { margin: 0 auto;}
+.container { margin: 0 auto; box-sizing: border-box;}
 
 
 
@@ -38,7 +38,7 @@
 	.user-float classes)
 	================================================================== ROW ====
 */
-.row { width: 100%; }
+.row { width: 100%; box-sizing: border-box; }
 
 
 

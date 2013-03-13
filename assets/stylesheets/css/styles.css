@@ -19,12 +19,12 @@ a:link {
 }
 .pane {
   height: 200px;
-  border: 0;
   padding: 10px;
   background-color: #eee;
   -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 /* Stack the two content containers */
 .main,
